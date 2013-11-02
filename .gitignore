@@ -11,3 +11,10 @@
 *.lai
 *.la
 *.a
+
+# Output directories
+#doc/api/
+
+# Mac OS X
+.DS_Store
+

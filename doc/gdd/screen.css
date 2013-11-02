@@ -1,0 +1,402 @@
+
+/* Base font is a serif family. All pages have a margin */
+body
+{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: small;
+	margin: 25px 45px;
+/*	margin-right: 10cm; */
+}
+
+/* Remove underlined effect from all links and make it bold */
+a
+{
+	text-decoration: none;
+/*	font-weight: bold; */
+}
+
+/* When mouse is over a link underline its text temporary */
+a:hover
+{
+	text-decoration: underline;
+}
+
+/* Definitions should be strong, not italics as default in some browsers.
+ * Green globally means definitions and titles, blue for hyperlinks */
+dfn
+{
+	font-weight: bold;
+	font-style: normal;
+	color: #004444;
+}
+
+var
+{
+	font-family: serif;
+}
+
+abbr[title]
+{
+	color: #162;
+	border-bottom: 1px dashed green;
+	cursor: help;
+}
+
+/* See http://www.xmlplease.com/footnotes */
+a.footnote
+{
+	font-size: 70%;
+	vertical-align: top
+}
+
+li
+{
+	margin: 8px 0px;
+}
+
+ol ol
+{
+	list-style-type: lower-alpha;
+}
+
+.Tabla .xref_caption
+{
+	padding-top: 5px;
+}
+
+.Tabla
+{
+	text-align: center;
+	font-size: 0.85em;
+	margin: 2.5em;
+}
+
+.Tabla table
+{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+
+.Tabla table td
+{
+	text-align: left;
+	border: 1px solid;
+	padding: 2px 4px;
+}
+
+.Tabla code, .Tabla pre
+{
+	font-size: 1.2em;
+}
+
+.Tabla pre
+{
+	margin: 0;
+}
+
+figure
+{
+	margin-left: 10px;
+}
+
+.Figura, pre.simple, pre.alone.prettyprint
+{
+	margin-left: 40px;
+	border: 0;
+}
+
+figure p
+{
+	color: #6A3A6D;
+}
+
+pre.simple.prettyprint
+{
+	margin: 0;
+	border: 0;
+}
+
+pre.prettyprint.lang-sh b
+{
+	border: 1px dotted gray;
+}
+
+.Figura
+{
+	text-align: center;
+}
+
+.Figura.textual
+{
+	border: 1px dotted gray;
+	padding: 1em;
+	text-align: left;
+}
+
+caption
+{
+	caption-side: bottom;
+}
+
+/* Autonumerate sections */
+body
+{
+	counter-reset: h1counter;
+}
+
+h1
+{
+	margin-top: 2cm;
+	counter-reset: exercise_counter;
+	counter-increment: h1counter;
+}
+
+.material h1
+{
+	margin-top: 4.5cm;
+	border-top: 4px double teal;
+	border-bottom: 4px double teal;
+	padding: .3em 0;
+	color: teal;
+	font-size: 2.2em;
+	text-shadow: 3px 3px 2px lightgray;
+
+	counter-increment: h1counter;
+	counter-reset: exercise_counter;
+/*	counter-reset: h2counter;*/
+}
+/*
+.material h1:before
+{
+	counter-increment: h1counter;
+	content: counter(h1counter) ". ";
+}
+*/
+
+
+h2
+{
+	margin-top: 1.5cm;
+}
+
+.material h2
+{
+	margin-top: 4cm;
+	border-top: 4px double teal;
+	padding: .3em 0;
+	color: teal;
+	font-size: 1.8em;
+	text-shadow: 2px 2px 2px lightgray;
+/*	counter-reset: h3counter;*/
+}
+/*
+.material h2:before
+{
+	counter-increment: h2counter;
+	content: counter(h1counter) "." counter(h2counter) ". ";
+}
+*/
+
+h3
+{
+	margin-top: 1cm;
+}
+
+.material h3
+{
+	margin-top: 3.5cm;
+	border-top: 1px solid teal;
+	padding: .3em 0;
+	color: teal;
+	font-size: 1.4em;
+	text-shadow: 2px 2px 2px lightgray;
+	/*counter-reset: h4counter;*/
+}
+
+/*
+h3:before
+{
+	counter-increment: h3counter;
+	content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) ". ";
+}
+*/
+
+h4
+{
+	margin-top: .7cm;
+}
+
+.material h4
+{
+	margin-top: 2.5cm;
+	border-top: 1px dashed teal;
+	padding: .3em 0;
+	color: teal;
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px lightgray;
+}
+
+/*
+.material h4:before
+{
+	counter-increment: h4counter;
+	content: counter(h1counter) "." counter(h2counter) "." counter(h3counter) "." counter(h4counter) ". ";
+}
+*/
+
+/* Table of contents elements */
+div.TOCEntry.TOCLevel1 { font-size: large; font-weight: bold; margin-top: 1.5em; }
+div.TOCEntry.TOCLevel2 { font-size: large; margin-left: 1em; margin-top: 0.75em; }
+div.TOCEntry.TOCLevel3 { margin-left: 2.5em; }
+div.TOCEntry.TOCLevel4 { margin-left: 4em; font-style: italic; }
+
+.xref_caption { font-size: smaller; text-align: center; }
+
+.formula
+{
+	text-align: center;
+}
+
+.exercise
+{
+	background: #eee;
+	border: dashed 1px;
+	padding: 0.5em 1.5em;
+	margin: 2em 0;
+	box-shadow: 0.5em 0.5em 1em lightgray;
+}
+
+.exercise .exercise_num
+{
+	font-weight: bold;
+}
+
+.exercise .exercise_num:after
+{
+	font-weight: bold;
+	counter-increment: exercise_counter;
+	content: " " counter(h1counter) "." counter(exercise_counter);
+}
+
+.exercise_solution
+{
+	text-align: right;
+}
+
+#front_cover
+{
+	text-align: right;
+}
+
+#book_title
+{
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 2px 2px 3px gray;
+	margin: 2em 0 1em;
+	border: 3px solid lightGreen;
+	padding: 0.5em 0;
+	box-shadow: 5px 5px 5px gray;
+}
+
+.php_doc_ref
+{
+	cursor: help;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+}
+
+#css_named_colors td
+{
+	border: 1px solid black;
+	width: 60px;
+	height: 30px;
+	text-align: center;
+}
+
+code.element:before
+{
+	content: '<';
+	color: #396;
+}
+
+code.element:after
+{
+	content: '>';
+	color: #396;
+}
+
+code.command
+{
+	border: 1px dotted gray;
+}
+
+.highlighted
+{
+	background-color: yellow;
+}
+
+#php_superarrays_tester
+{
+	padding: .5em;
+	border: dotted 1px gray;
+	text-align: center;
+}
+
+#php_superarrays_tester input
+{
+	width: 76%;
+}
+
+#php_superarrays_tester button
+{
+	width: 10%;
+}
+
+.textual_figure
+{
+	margin-left: 40px;
+}
+
+.textual_figure > p, .textual_figure pre.simple
+{
+	margin-top: 1em;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 1em;
+}
+
+.textual_figure pre.simple.lang-html:hover
+{
+	background: url('bg_html.svg') right center repeat-y;
+}
+
+.textual_figure pre.simple.lang-php:hover
+{
+	background: url('bg_php.svg') right center repeat-y;
+}
+
+.textual_figure pre.simple.lang-js:hover
+{
+	background: url('bg_js.svg') right center repeat-y;
+}
+
+.textual_figure pre.simple.lang-css:hover
+{
+	background: url('bg_css.svg') right center repeat-y;
+}
+
+.textual_figure button,
+.textual_figure input[type="button"],
+.textual_figure input[type="submit"],
+.textual_figure input[type="reset"]
+{
+	width: 90px;
+	height: 27px;
+}
+
+button img
+{
+	padding-right: .5em;
+}
