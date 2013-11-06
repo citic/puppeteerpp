@@ -15,3 +15,5 @@ Puppeteer++ is developed by Jeisson Hidalgo-Céspedes, under a research project 
 - [Game Design Document](doc/gdd/puppeteerpp.md)
 - [API documentation](doc/api/)
 - [Project oficial web page at CITIC](http://www.citic.ucr.ac.cr/proyecto/incentivo_lenguaje_programacion_en_estudiantes) (in Spanish)
+
+Developers: Puppeteer++ is a multi-platform video game built over [Cocos2d-x](http://www.cocos2d-x.org/) v3. Instructions about setting up the development environment can be found in [INSTALL.md](INSTALL.md) file.
