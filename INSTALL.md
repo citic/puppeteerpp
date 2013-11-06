@@ -1,31 +1,43 @@
 
-1. SETTING THE DEVELOPMENT ENVIRONMENT
+Setting the development environment
+===================================
 
-1.1. All
+Puppeteer++ is a multi-platform video game built over Cocos2d-x version 3. This document explains how to setup the development environment on each supported platform.
 
-1. Download the Cocos2d-x-x.y.z.zip from official web site
-2. Extract it to any folder of your system
-   Optional: On Linux/Mac change permissions to 755
-3. Set COCOS2DX_ROOT environment variable to point to the folder where Cocos2d-x was extracted
-   Use ~/.profile for Linux/Mac and System|Properties|Advanced|Environment variables for Windows
-4. Log-out and log-in again in your system
-5. XCode on Mac requires a folder relative to the project, not the COCOS2D_ROOT variable.
-   Create a symbolic link in each game folder called cocos2dx to $COCOS2D_ROOT
 
+All platforms
+-------------
+
+1. Download the `Cocos2d-x-x.y.z.zip` from official web site.
+
+2. Extract it to any folder of your system. *Advice*: On Linux/Mac change root folder permissions to 755.
+
+3. Set `COCOS2DX_ROOT` environment variable to point the folder where Cocos2d-x was extracted in step 1. Make this variable permanent in your `~/.profile` for Linux/Mac or "System | Properties | Advanced |Environment variables" for Microsoft Windows.
+
+4. Compile the Cocos2d-x library. On Linux call `./make-all-linux-project.sh`. On Windows open `cocos2d-win32.vc2012.sln` and compile anything. On Mac OS X do nothing (Cocos2d-x is compiled each time the game is compiled!).
+
+5. Log-out and log-in again in your system to make the environment variables available in Linux/Mac.
+
+6. XCode on Mac OS X requires the Cocos2d-x folder is inside the Puppeteer++ root folder. Just create a symbolic link in the Puppeteer++ root folder called `cocos2dx` pointing to the real directory where Cocos2d-x is "installed", that is, a symbolic link to the content of the `$COCOS2DX_ROOT` environment variable.
+
+The following script pseudo-code briefs these steps for Linux:
+
+	cd <any-folder-of-your-file-system>
 	wget <url-to-cocos2d-x-x.y.z.zip>
-	unzip cocos2d-x-x.y.z.zip
+	unzip <cocos2d-x-x.y.z.zip>
 	rm -rf __MACOSX
-	chmod 755 cocos2d-x-x.y/
-	cd cocos2d-x-x.y.z/
+	chmod 755 <cocos2d-x-x.y.z>/
+	cd <cocos2d-x-x.y.z>/
 	./make-all-linux-project.sh
 	echo export COCOS2D_ROOT=`pwd` >> $HOME/.profile
 	echo export COCOS2DX_ROOT=`pwd` >> $HOME/.profile
 	# remember log-out and log-in
 
 
-1.2. Android
+Android
+-------
 
-1. Download Android SDK and extract it to any folder of your hard drive
+Download [Android SDK](http://developer.android.com/sdk/index.html) and extract it to any folder of your hard drive. Set an environment variable called `ANDROID_SDK_ROOT` to that folder.
 
 	wget <url-adt-bundle-version>
 	unzip <adt-bundle-version>
@@ -33,7 +45,8 @@
 	echo export ANDROID_SDK_ROOT=`pwd` >> $HOME/.profile
 	cd ..
 
-2. Download Android NDK and extract it to any folder of your hard drive
+
+Download [Android NDK](http://developer.android.com/tools/sdk/ndk/index.html) and extract it to any folder of your hard drive. Set two environment variables: `ANDROID_NDK_ROOT` and `NDK_ROOT`, both to that folder.
 
 	wget <url-android-ndk-r9>
 	tar -xjf android-ndk-r9-*
@@ -42,27 +55,7 @@
 	echo export NDK_ROOT=`pwd` >> $HOME/.profile
 	cd ..
 
-3. Include those in PATH
+
+Include both, NDK and SDK installation folders in your PATH environment variable:
 
 	echo 'export PATH=$PATH:$ANDROID_NDK_ROOT:$ANDROID_SDK_ROOT' >> $HOME/.profile
-
-
-
-2. CREATING A NEW GAME
-
-	From http://www.cocos2d-x.org/projects/cocos2d-x/wiki/How_to_create_a_multi-platform_project_in_one_command_line
-
-	Run 'python --version' and make sure it is 2.7.3 or newer but 3.x.x
-
-	cd $COCOS2DX_ROOT/tools/project-creator/
-	python create_project.py -project MyGame -package com.mycompany.games.mygame -language cpp
-	cd $COCOS2DX_ROOT/projects/
-	mv MyGame /some/folder/under/version/control
-	rm -r proj.no-intendent-platform
-
-	# Mac and iOS projects
-	cd proj.mac
-	ln -s $COCOS2DX_ROOT cocosd2x
-	edit MyGame.xcodeproj
-	replace '../../../' by '../cocos2dx/'
-	commit to your version control ignoring 'xcuserdata' folders
