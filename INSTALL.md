@@ -46,7 +46,7 @@ Download [Android SDK](http://developer.android.com/sdk/index.html) and extract 
 	cd ..
 
 
-Download [Android NDK](http://developer.android.com/tools/sdk/ndk/index.html) and extract it to any folder of your hard drive. Set two environment variables: `ANDROID_NDK_ROOT` and `NDK_ROOT`, both to that folder.
+Download [Android NDK](http://developer.android.com/tools/sdk/ndk/index.html) and extract it to any folder of your hard drive. Set two environment variables: `ANDROID_NDK_ROOT` and `NDK_ROOT`, both to that folder. <!--- Note: it seems Cocos2d-x is able to work only with NDK v8 or older, get the files for [Mac OS X 64bits](http://dl.google.com/android/ndk/android-ndk-r8e-darwin-x86_64.tar.bz2), and [Linux/Windows](http://mirror.thebasementserver.com/soft/android-ndk/r8/). -->
 
 	wget <url-android-ndk-r9>
 	tar -xjf android-ndk-r9-*
@@ -59,3 +59,8 @@ Download [Android NDK](http://developer.android.com/tools/sdk/ndk/index.html) an
 Include both, NDK and SDK installation folders in your PATH environment variable:
 
 	echo 'export PATH=$PATH:$ANDROID_NDK_ROOT:$ANDROID_SDK_ROOT' >> $HOME/.profile
+
+You also require [Apache Ant](http://ant.apache.org/). If you already have installed [Mac Ports](http://www.macports.org/):
+
+	sudo port install apache-ant
+
