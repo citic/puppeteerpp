@@ -18,7 +18,7 @@ All platforms
 
 5. Log-out and log-in again in your system to make the environment variables available in Linux/Mac.
 
-6. XCode on Mac OS X requires the Cocos2d-x folder is inside the Puppeteer++ root folder. Just create a symbolic link in the Puppeteer++ root folder called `cocos2dx` pointing to the real directory where Cocos2d-x is "installed", that is, a symbolic link to the content of the `$COCOS2DX_ROOT` environment variable.
+6. XCode on Mac OS X requires the Cocos2d-x folder is inside the Puppeteer++ root folder. Just create a symbolic link in the Puppeteer++ root folder called `cocos2dx` pointing to the real directory where Cocos2d-x is "installed", that is, a symbolic link to the content of the `$COCOS2DX_ROOT` environment variable. Create another symbolic link called `cocos2d` to the same folder.
 
 The following script pseudo-code briefs these steps for Linux:
 

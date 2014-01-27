@@ -14,6 +14,7 @@
 *.a
 
 # Cocos2d-x
+cocos2d
 cocos2dx
 
 # Output directories
