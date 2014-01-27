@@ -1,6 +1,4 @@
 #include "../Classes/AppDelegate.h"
-#include "cocos2d.h"
-#include "CCEGLView.h"
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -11,9 +9,9 @@ USING_NS_CC;
 
 int main(int argc, char **argv)
 {
-	// create the application instance
-	AppDelegate app;
-	EGLView* eglView = EGLView::getInstance();
-	eglView->setFrameSize(800, 480);
-	return Application::getInstance()->run();
+    // create the application instance
+    AppDelegate app;
+    EGLView eglView;
+    eglView.init("Cocos2d-x Game",900,640);
+    return Application::getInstance()->run();
 }
