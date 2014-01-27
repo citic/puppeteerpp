@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="640"
+   height="1136"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="Default.svg"
+   inkscape:export-filename="/media/psf/Home/dev/prj/games/Common/Resources/ios/Default.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.46919014"
+     inkscape:cx="322.13133"
+     inkscape:cy="568"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     inkscape:window-width="1355"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Default-568h@2x"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,83.63782)"
+     style="display:none">
+    <rect
+       style="fill:#b3b3b3;stroke:none"
+       id="rect3009"
+       width="1136"
+       height="640"
+       x="-83.637817"
+       y="-640"
+       transform="matrix(0,1,-1,0,0,0)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Default@2x"
+     style="display:inline"
+     transform="translate(0,496)">
+    <rect
+       style="fill:#b3b3b3;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       id="rect2987"
+       x="-408"
+       y="-640"
+       height="640"
+       width="960"
+       transform="matrix(0,1,-1,0,0,0)" />
+    <g
+       style="display:inline"
+       id="g3002"
+       transform="matrix(0,1,-1,0,641,-497)">
+      <rect
+         ry="35.457397"
+         y="20"
+         x="118"
+         height="600"
+         width="900"
+         id="rect3011"
+         style="fill:none;stroke:#000000" />
+      <rect
+         style="fill:none;stroke:#ffffff"
+         id="rect3013"
+         width="900"
+         height="600"
+         x="120"
+         y="22"
+         ry="35.457397" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Common"
+     style="display:inline"
+     transform="translate(0,496)">
+    <g
+       id="g3009"
+       transform="translate(-248,-245.77339)">
+      <g
+         id="g2996">
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           x="566.41797"
+           y="242.94922"
+           id="text3015"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan3017"
+             x="566.41797"
+             y="242.94922"
+             style="font-size:72px">My Game</tspan></text>
+        <text
+           sodipodi:linespacing="125%"
+           id="text3019"
+           y="242.94922"
+           x="564.41797"
+           style="font-size:40px;font-style:normal;font-weight:bold;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#aaffcc;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans Bold"
+           xml:space="preserve"><tspan
+             style="font-size:72px;fill:#aaffcc"
+             y="242.94922"
+             x="564.41797"
+             id="tspan3021"
+             sodipodi:role="line">My Game</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:12px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         x="568.20215"
+         y="419.79092"
+         id="text3029"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan3031"
+           x="568.20215"
+           y="419.79092"
+           style="font-size:18px;fill:#000000">Modify Default*.png files in your iOS project</tspan><tspan
+           sodipodi:role="line"
+           x="568.20215"
+           y="442.29092"
+           style="font-size:18px;fill:#000000"
+           id="tspan3033">to replace the default Application Launcher images</tspan></text>
+    </g>
+  </g>
+</svg>
