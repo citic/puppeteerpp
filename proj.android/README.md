@@ -42,9 +42,9 @@ There are two ways of building Android projects.
    Install Eclipse with Java. Add ADT and CDT plugins.
 
 2. Only for Windows
-	1. Install [Cygwin](http://www.cygwin.com/) with make (select make package from the list during the install).
-	2. Add `Cygwin\bin` directory to system PATH variable.
-	3. Add this line `none /cygdrive cygdrive binary,noacl,posix=0,user 0 0` to `Cygwin\etc\fstab` file.
+    1. Install [Cygwin](http://www.cygwin.com/) with make (select make package from the list during the install).
+    2. Add `Cygwin\bin` directory to system PATH variable.
+    3. Add this line `none /cygdrive cygdrive binary,noacl,posix=0,user 0 0` to `Cygwin\etc\fstab` file.
    
 3. Set up Variables: 
 	1. Path Variable `COCOS2DX`: 
@@ -75,13 +75,13 @@ There are two ways of building Android projects.
 
 ### Running project from Command Line
 
-	$ cd cocos2d-x/samples/Cpp/TestCpp/proj.android/
-	$ export NDK_ROOT=/path/to/ndk
-	$ ./build_native.sh
-	$ ant debug install
+    $ cd cocos2d-x/samples/Cpp/TestCpp/proj.android/
+    $ export NDK_ROOT=/path/to/ndk
+    $ ./build_native.sh
+    $ ant debug install
 
 If the last command results in sdk.dir missing error then do: 
 
-	$ android list target
-	$ android update project -p . -t (id from step 6)
-	$ android update project -p cocos2d-x/cocos2dx/platform/android/java/ -t (id from step 6)
+    $ android list target
+    $ android update project -p . -t (id from step 6)
+    $ android update project -p cocos2d-x/cocos2dx/platform/android/java/ -t (id from step 6)
