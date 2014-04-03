@@ -1,52 +1,67 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 
+#include <CCDirector.h>
+#include <CCGLView.h>
+
 USING_NS_CC;
 
-AppDelegate::AppDelegate() {
-
-}
-
-AppDelegate::~AppDelegate() 
+AppDelegate::AppDelegate()
 {
 }
 
-bool AppDelegate::applicationDidFinishLaunching() {
-    // initialize director
-    auto director = Director::getInstance();
-    auto glview = director->getOpenGLView();
-    if(!glview) {
-        glview = GLView::create("My Game");
-        director->setOpenGLView(glview);
-    }
+AppDelegate::~AppDelegate()
+{
+}
 
-    // turn on display FPS
-    director->setDisplayStats(true);
+bool AppDelegate::applicationDidFinishLaunching()
+{
+	// Initialize director
+	auto director = Director::getInstance();
 
-    // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+	// Create the game window
+	if ( ! createGameWindow() ) return false;
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+	// turn on display FPS
+	director->setDisplayStats(true);
 
-    // run
-    director->runWithScene(scene);
+	// set FPS. the default value is 1.0/60 if you don't call this
+	director->setAnimationInterval(1.0 / 60);
 
-    return true;
+	// create a scene. it's an autorelease object
+	auto scene = HelloWorld::createScene();
+
+	// run
+	director->runWithScene(scene);
+
+	return true;
 }
 
 // This function will be called when the app is inactive. When comes a phone call,it's be invoked too
 void AppDelegate::applicationDidEnterBackground() {
-    Director::getInstance()->stopAnimation();
+	Director::getInstance()->stopAnimation();
 
-    // if you use SimpleAudioEngine, it must be pause
-    // SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
+	// if you use SimpleAudioEngine, it must be pause
+	// SimpleAudioEngine::sharedEngine()->pauseBackgroundMusic();
 }
 
 // this function will be called when the app is active again
 void AppDelegate::applicationWillEnterForeground() {
-    Director::getInstance()->startAnimation();
+	Director::getInstance()->startAnimation();
 
-    // if you use SimpleAudioEngine, it must resume here
-    // SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+	// if you use SimpleAudioEngine, it must resume here
+	// SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
+}
+
+bool AppDelegate::createGameWindow()
+{
+	auto director = Director::getInstance();
+	auto window = director->getOpenGLView();
+	if( ! window )
+	{
+		window = GLView::create("Puppeteer++");
+		director->setOpenGLView(window);
+	}
+
+	return window != nullptr;
 }
