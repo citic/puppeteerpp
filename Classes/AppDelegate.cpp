@@ -60,8 +60,16 @@ bool AppDelegate::createGameWindow()
 	if( ! window )
 	{
 		window = GLView::create("Puppeteer++");
+		if ( ! window ) return false;
 		director->setOpenGLView(window);
 	}
 
-	return window != nullptr;
+	// Game graphics are designed for 1024x768
+	window->setDesignResolutionSize(1024, 768, ResolutionPolicy::EXACT_FIT);
+
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 || CC_TARGET_PLATFORM == CC_PLATFORM_LINUX || CC_TARGET_PLATFORM == CC_PLATFORM_MAC
+	window->setFrameSize(1024, 768);
+#endif
+
+	return true;
 }
