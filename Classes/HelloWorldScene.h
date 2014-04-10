@@ -24,8 +24,10 @@ class HelloWorld : public cocos2d::Layer
 	CREATE_FUNC(HelloWorld)
 
   protected:
-	// Create the main menu scenography
+	/// Create the main menu scenography
 	void createMainMenu();
+	/// Create the game title and animates it
+	void createGameTitle();
 };
 
 #endif // __HELLOWORLD_SCENE_H__

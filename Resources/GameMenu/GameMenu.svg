@@ -15,9 +15,9 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="GameMenu.svg"
-   inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/GameMenu.png"
-   inkscape:export-xdpi="150"
-   inkscape:export-ydpi="150">
+   inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/GameTitle.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs3365" />
   <sodipodi:namedview
@@ -27,11 +27,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.0638021"
+     inkscape:zoom="1.0429688"
      inkscape:cx="512"
      inkscape:cy="384"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer3"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -39,7 +39,17 @@
      inkscape:window-height="999"
      inkscape:window-x="0"
      inkscape:window-y="24"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="512.31334,283.88739"
+       id="guide3087" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="890.78624,430.68115"
+       id="guide3105" />
+  </sodipodi:namedview>
   <metadata
      id="metadata3368">
     <rdf:RDF>
@@ -55,7 +65,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="Background">
+     inkscape:label="Background"
+     style="display:inline">
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:none"
        id="rect4440"
@@ -303,26 +314,36 @@
            sodipodi:role="line">[25%]</tspan></text>
     </g>
     <g
-       style="display:inline"
-       id="g4299"
-       transform="matrix(1.7593193,-0.06804079,0,1.7593193,259.77763,-74.05807)">
+       id="g3096">
       <path
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 178.71738,311.23335 82.75195,0 -8.4045,-14.86949 -13.25324,0.6465 -0.32325,-9.05099 c 0,0 -1.61625,-1.61625 -6.465,-1.61625 -4.84874,0 -28.76923,-0.32325 -28.76923,-0.32325 0,0 -1.293,0.96975 -1.61625,3.2325 -0.32325,2.26275 0.32325,8.08124 0.32325,8.08124 l -13.89974,0.32325 z"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/BoxOfficeWindow.png"
+         style="fill:none;stroke:#000000;stroke-width:1.75931931px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 574.19857,458.56235 145.5871,-0.23651 -14.7862,-26.13616 -23.31668,1.17528 -0.5687,-15.92266 c 0,0 -2.8435,-2.83888 -11.374,-2.82502 -8.53048,0.0139 -50.61426,-0.48648 -50.61426,-0.48648 0,0 -2.2748,1.7098 -2.8435,5.69162 -0.5687,3.98183 0.5687,14.21656 0.5687,14.21656 l -24.45408,0.60843 z"
          id="path4012"
          inkscape:connector-curvature="0" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 178.39413,310.2636 c 0,0 -1.61625,-63.35696 3.2325,-78.87295 4.84874,-15.51599 15.83924,-35.88072 26.18323,-38.14347 10.34399,-2.26275 27.79948,-5.49525 35.55748,3.2325 7.75799,8.72774 14.54624,16.16249 16.48574,34.91097 1.9395,18.74849 2.90925,61.74072 2.586,69.49871 -0.32325,7.758 -0.96975,10.34399 -0.96975,10.34399"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/BoxOfficeWindow.png"
+         style="fill:none;stroke:#000000;stroke-width:1.75931931px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 573.62987,456.85717 c 0,0 -2.8435,-111.4605 5.687,-138.77194 8.53048,-27.31144 27.86628,-63.17091 46.06466,-67.18137 18.19838,-4.01047 48.90816,-9.74735 62.55696,5.58537 13.64878,15.33271 25.59148,28.39341 29.00368,61.37243 3.4122,32.97904 5.1183,108.61332 4.5496,122.26303 -0.5687,13.64972 -1.7061,18.20115 -1.7061,18.20115"
          id="path4014"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="csssssc" />
       <path
-         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 188.41487,297.65686 c 0,0 -1.293,-50.42697 2.586,-64.97321 3.879,-14.54624 13.25324,-31.67848 23.59724,-35.23423 10.34399,-3.55574 19.39498,-4.20224 24.89023,2.26275 5.49525,6.465 12.92999,21.65774 14.54624,46.54797 1.61625,24.89024 0,50.42697 0,50.42697"
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/BoxOfficeWindow.png"
+         style="fill:none;stroke:#000000;stroke-width:1.75931931px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 591.25955,434.64925 c 0,0 -2.2748,-88.71344 4.5496,-114.31601 6.8244,-25.60257 23.31668,-55.77044 41.51508,-62.0557 18.19838,-6.28525 34.12196,-7.44852 43.78986,3.90976 9.6679,11.35829 22.74798,38.06593 25.59148,81.85117 2.8435,43.78526 0,88.71714 0,88.71714"
          id="path4016"
          inkscape:connector-curvature="0" />
       <path
+         inkscape:export-ydpi="90"
+         inkscape:export-xdpi="90"
+         inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/BoxOfficeWindow.png"
          sodipodi:type="arc"
          style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
          id="path4018"
@@ -331,31 +352,35 @@
          sodipodi:rx="10.667243"
          sodipodi:ry="11.313743"
          d="m 120.24892,270.01813 a 10.667243,11.313743 0 1 1 -21.334483,0 10.667243,11.313743 0 1 1 21.334483,0 z"
-         transform="translate(111.80467,-20.525497)" />
+         transform="matrix(1.7593193,-0.00285803,0,1.7593193,456.47774,-124.91615)" />
       <text
+         transform="matrix(1,-0.00162451,0,1,0,0)"
          xml:space="preserve"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
-         x="221.47121"
-         y="325.7796"
+         style="font-size:24.63047028px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans"
+         x="649.4162"
+         y="485.08664"
          id="text4020"
          sodipodi:linespacing="125%"><tspan
            sodipodi:role="line"
            id="tspan4022"
-           x="221.47121"
-           y="325.7796"
+           x="649.4162"
+           y="485.08664"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono Bold">A real play</tspan><tspan
            sodipodi:role="line"
-           x="221.47121"
-           y="343.2796"
+           x="649.4162"
+           y="515.87476"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Liberation Mono;-inkscape-font-specification:Liberation Mono"
            id="tspan4024">[0%]</tspan></text>
     </g>
     <g
        style="display:inline"
        id="g4041"
-       transform="matrix(1.7593193,-0.57997204,0,1.7593193,310.37371,58.64628)">
+       transform="matrix(1.7593193,0.00160686,0,1.7593193,310.37371,-141.00469)"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/CreatePlay.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
-         d="m 365.91878,268.72513 a 22.627485,22.627485 0 1 1 -45.25497,0 22.627485,22.627485 0 1 1 45.25497,0 z"
+         d="m 365.91878,268.72513 c 0,12.49681 -10.13067,22.62748 -22.62749,22.62748 -12.49681,0 -22.62748,-10.13067 -22.62748,-22.62748 0,-12.49682 10.13067,-22.62749 22.62748,-22.62749 12.49682,0 22.62749,10.13067 22.62749,22.62749 z"
          sodipodi:ry="22.627485"
          sodipodi:rx="22.627485"
          sodipodi:cy="268.72513"
@@ -371,7 +396,7 @@
          sodipodi:cy="268.72513"
          sodipodi:rx="26.506483"
          sodipodi:ry="26.506483"
-         d="m 369.79777,268.72513 a 26.506483,26.506483 0 1 1 -53.01296,0 26.506483,26.506483 0 1 1 53.01296,0 z" />
+         d="m 369.79777,268.72513 c 0,14.63912 -11.86735,26.50648 -26.50648,26.50648 -14.63913,0 -26.50648,-11.86736 -26.50648,-26.50648 0,-14.63913 11.86735,-26.50648 26.50648,-26.50648 14.63913,0 26.50648,11.86735 26.50648,26.50648 z" />
       <g
          id="text4034"
          style="font-size:46.89012146px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:none;stroke:#000000;font-family:Liberation Sans;-inkscape-font-specification:Liberation Sans">
@@ -404,7 +429,10 @@
        d="m 282.48823,414.3378 7.52405,0.30096 c -0.45248,-3.2949 1.016,-6.07333 3.00961,-7.62438 l -5.11634,-5.01603 c 2.70864,-3.4109 7.22309,-5.7183 12.33943,-5.11637 l 0.30098,7.42374 c 3.44433,-0.36784 5.4842,0.26752 7.3234,2.80898 l 5.61797,-5.317 c 4.50055,3.14338 5.71604,8.49384 5.21669,12.74075 l -7.42376,0.40128 c 0.30097,3.14338 -0.5016,5.78515 -3.00961,7.62436 l 4.81539,4.61477 c -2.92817,2.90308 -5.38945,7.448 -12.74074,5.51762 l -0.30094,-7.3234 c -2.30739,0.46815 -4.41412,0.0334 -6.62118,-2.80899 l -5.81861,5.11636 c -4.33946,-2.40888 -5.66555,-7.66528 -5.11634,-13.34265 z"
        id="path4371"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccccccccccc" />
+       sodipodi:nodetypes="ccccccccccccccccc"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;display:inline"
@@ -414,7 +442,10 @@
        sodipodi:rx="0.28021649"
        sodipodi:ry="0.16812989"
        d="m 48.309319,111.27156 a 0.28021649,0.16812989 0 1 1 -0.560433,0 0.28021649,0.16812989 0 1 1 0.560433,0 z"
-       transform="matrix(1.7593193,0,0,1.7593193,209.95633,-78.77804)" />
+       transform="matrix(1.7593193,0,0,1.7593193,209.95633,-78.77804)"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        d="m 48.309319,111.27156 a 0.28021649,0.16812989 0 1 1 -0.560433,0 0.28021649,0.16812989 0 1 1 0.560433,0 z"
        sodipodi:ry="0.16812989"
@@ -424,7 +455,10 @@
        id="path4384"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;display:inline"
        sodipodi:type="arc"
-       transform="matrix(1.7593193,0,0,1.7593193,228.88715,-71.28459)" />
+       transform="matrix(1.7593193,0,0,1.7593193,228.88715,-71.28459)"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        transform="matrix(1.7593193,0,0,1.7593193,220.80212,-51.95937)"
        sodipodi:type="arc"
@@ -434,7 +468,10 @@
        sodipodi:cy="111.27156"
        sodipodi:rx="0.28021649"
        sodipodi:ry="0.16812989"
-       d="m 48.309319,111.27156 a 0.28021649,0.16812989 0 1 1 -0.560433,0 0.28021649,0.16812989 0 1 1 0.560433,0 z" />
+       d="m 48.309319,111.27156 a 0.28021649,0.16812989 0 1 1 -0.560433,0 0.28021649,0.16812989 0 1 1 0.560433,0 z"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        d="m 48.309319,111.27156 a 0.28021649,0.16812989 0 1 1 -0.560433,0 0.28021649,0.16812989 0 1 1 0.560433,0 z"
        sodipodi:ry="0.16812989"
@@ -444,7 +481,10 @@
        id="path4388"
        style="fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;display:inline"
        sodipodi:type="arc"
-       transform="matrix(1.7593193,0,0,1.7593193,203.25167,-59.84722)" />
+       transform="matrix(1.7593193,0,0,1.7593193,203.25167,-59.84722)"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <path
        sodipodi:type="arc"
        style="fill:none;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;display:inline"
@@ -454,7 +494,10 @@
        sodipodi:rx="3.4186411"
        sodipodi:ry="3.4186411"
        d="m 55.034516,119.06158 a 3.4186411,3.4186411 0 1 1 -6.837282,0 3.4186411,3.4186411 0 1 1 6.837282,0 z"
-       transform="matrix(1.7593193,0,0,1.7593193,209.95633,-78.77804)" />
+       transform="matrix(1.7593193,0,0,1.7593193,209.95633,-78.77804)"
+       inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/ConfigGear.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
   </g>
   <g
      inkscape:groupmode="layer"

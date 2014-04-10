@@ -1,5 +1,7 @@
 #include "HelloWorldScene.h"
 
+#include <CCActionInterval.h>
+#include <CCAnimation.h>
 #include <CCDirector.h>
 #include <CCGeometry.h>
 #include <CCLabelTTF.h>
@@ -57,6 +59,7 @@ bool HelloWorld::init()
 	this->addChild(label, 1);
 
 	createMainMenu();
+	createGameTitle();
 
 	// Play the background music
 	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Music/puppeteer.mp3");
@@ -89,4 +92,44 @@ void HelloWorld::createMainMenu()
 	this->addChild(background, 0);
 
 	// Place the game title
+}
+
+//#include <cocos2d.h>
+
+void HelloWorld::createGameTitle()
+{
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	Point origin = Director::getInstance()->getVisibleOrigin();
+
+	// Place the game title
+	auto gameTitle = Sprite::create("GameMenu/GameTitle0.png");
+	gameTitle->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height - 150.0f));
+	this->addChild(gameTitle, 0);
+
+	char buffer[256];
+	auto animation = Animation::create();
+	for ( int i = 0; i <= 10; ++i )
+	{
+		int imageIndex = i <= 5 ? i : 10 - i;
+		sprintf(buffer, "GameMenu/GameTitle%i.png", imageIndex);
+		animation->addSpriteFrameWithFile(buffer);
+	}
+
+	animation->setDelayPerUnit( 0.1333f);
+	auto repeatAnimation = RepeatForever::create( Animate::create(animation) );
+	gameTitle->runAction(repeatAnimation);
+
+/*
+	Vector<SpriteFrame*> animFrames(10);
+	for(int i = 0; i < 6; ++i)
+		animFrames.pushBack( SpriteFrame::create("GameMenu/GameTitle.png", Rect(0, i * 265, 601, 265)) );
+
+	for(int i = 5; i >= 0; --i)
+		animFrames.pushBack( SpriteFrame::create("GameMenu/GameTitle.png", Rect(0, i * 265, 601, 265)) );
+
+	auto animation = Animation::createWithSpriteFrames(animFrames, 0.1333f);
+	auto animate = Animate::create(animation);
+	auto repeatAnimation = RepeatForever::create(animate);
+	gameTitle->runAction(repeatAnimation);
+*/
 }
