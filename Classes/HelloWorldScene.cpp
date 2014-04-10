@@ -7,6 +7,7 @@
 #include <CCMenuItem.h>
 #include <CCScene.h>
 #include <CCSprite.h>
+#include <SimpleAudioEngine.h>
 
 USING_NS_CC;
 
@@ -29,7 +30,7 @@ Scene* HelloWorld::createScene()
 bool HelloWorld::init()
 {
 	// Superclass init first
-	if ( !Layer::init() ) return false;
+	if ( ! Layer::init() ) return false;
 
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	Point origin = Director::getInstance()->getVisibleOrigin();
@@ -55,15 +56,10 @@ bool HelloWorld::init()
 	// add the label as a child to this layer
 	this->addChild(label, 1);
 
-	// add "HelloWorld" splash screen"
-	auto sprite = Sprite::create("GameMenu/GameMenu.png");
+	createMainMenu();
 
-	// position the sprite on the center of the screen
-	sprite->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
-
-	// add the sprite as a child to this layer
-	this->addChild(sprite, 0);
-
+	// Play the background music
+	CocosDenshion::SimpleAudioEngine::getInstance()->playBackgroundMusic("Music/puppeteer.mp3");
 	return true;
 }
 
@@ -80,4 +76,17 @@ void HelloWorld::menuCloseCallback(Ref* /*pSender*/)
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
 	exit(0);
 #endif
+}
+
+void HelloWorld::createMainMenu()
+{
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	Point origin = Director::getInstance()->getVisibleOrigin();
+
+	// Place the background image
+	auto background = Sprite::create("GameMenu/Background.png");
+	background->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height/2 + origin.y));
+	this->addChild(background, 0);
+
+	// Place the game title
 }

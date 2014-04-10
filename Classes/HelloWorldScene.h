@@ -22,6 +22,10 @@ class HelloWorld : public cocos2d::Layer
 
 	// implement the "static create()" method manually
 	CREATE_FUNC(HelloWorld)
+
+  protected:
+	// Create the main menu scenography
+	void createMainMenu();
 };
 
 #endif // __HELLOWORLD_SCENE_H__
