@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="122"
+   height="1001"
+   id="svg3407"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="Masks.svg"
+   inkscape:export-filename="/home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs3409" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.8001998"
+     inkscape:cx="61"
+     inkscape:cy="500.5"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1669"
+     inkscape:window-height="999"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3415"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       spacingx="122px"
+       spacingy="143px" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,1001"
+       id="guide3498" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3412">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-51.362183)">
+    <image
+       y="51.362183"
+       x="12"
+       id="image3495"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks01.png"
+       height="139"
+       width="98" />
+    <image
+       y="194.36218"
+       x="10"
+       id="image3559"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks02.png"
+       height="141"
+       width="102" />
+    <image
+       y="337.36218"
+       x="8"
+       id="image3621"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks03.png"
+       height="141"
+       width="106" />
+    <image
+       y="480.36218"
+       x="6"
+       id="image3683"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks04.png"
+       height="143"
+       width="110" />
+    <image
+       y="623.36218"
+       x="4"
+       id="image3745"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks05.png"
+       height="143"
+       width="114" />
+    <image
+       y="766.36218"
+       x="2"
+       id="image3807"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks06.png"
+       height="141"
+       width="118" />
+    <image
+       y="909.36218"
+       x="0"
+       id="image3869"
+       xlink:href="file:///home/jhc/dev/puppeteerpp/Resources/GameMenu/Masks07.png"
+       height="139"
+       width="122" />
+  </g>
+</svg>
