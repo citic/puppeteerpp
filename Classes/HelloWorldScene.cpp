@@ -102,10 +102,11 @@ void HelloWorld::createGameTitle()
 	Point origin = Director::getInstance()->getVisibleOrigin();
 
 	// Place the game title
-	auto gameTitle = Sprite::create("GameMenu/GameTitle0.png");
-	gameTitle->setPosition(Point(visibleSize.width/2 + origin.x, visibleSize.height - 150.0f));
+	auto gameTitle = Sprite::create("GameMenu/GameTitle.png");
+	gameTitle->setPosition(Point(visibleSize.width/2 + origin.x - 122 / 2, visibleSize.height - 150.0f + 55));
 	this->addChild(gameTitle, 0);
 
+/*
 	char buffer[256];
 	auto animation = Animation::create();
 	for ( int i = 0; i <= 10; ++i )
@@ -118,18 +119,22 @@ void HelloWorld::createGameTitle()
 	animation->setDelayPerUnit( 0.1333f);
 	auto repeatAnimation = RepeatForever::create( Animate::create(animation) );
 	gameTitle->runAction(repeatAnimation);
+*/
+	// Place the masks animation
 
-/*
-	Vector<SpriteFrame*> animFrames(10);
-	for(int i = 0; i < 6; ++i)
-		animFrames.pushBack( SpriteFrame::create("GameMenu/GameTitle.png", Rect(0, i * 265, 601, 265)) );
+	Vector<SpriteFrame*> animFrames(14);
+	for(int i = 0; i < 7; ++i)
+		animFrames.pushBack( SpriteFrame::create("GameMenu/Masks.png", Rect(0, i * 143, 122, 143)) );
 
-	for(int i = 5; i >= 0; --i)
-		animFrames.pushBack( SpriteFrame::create("GameMenu/GameTitle.png", Rect(0, i * 265, 601, 265)) );
+	for(int i = 6; i >= 0; --i)
+		animFrames.pushBack( SpriteFrame::create("GameMenu/Masks.png", Rect(0, i * 143, 122, 143)) );
+
+	auto masks = Sprite::createWithSpriteFrame( animFrames.at(0) );
+	masks->setPosition(Point(visibleSize.width / 2 + origin.x + 122, visibleSize.height - 150.0f));
+	this->addChild(masks, 0);
 
 	auto animation = Animation::createWithSpriteFrames(animFrames, 0.1333f);
 	auto animate = Animate::create(animation);
 	auto repeatAnimation = RepeatForever::create(animate);
-	gameTitle->runAction(repeatAnimation);
-*/
+	masks->runAction(repeatAnimation);
 }
