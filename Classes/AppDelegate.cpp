@@ -1,8 +1,5 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
-
-#include <CCDirector.h>
-#include <CCGLView.h>
 #include <SimpleAudioEngine.h>
 
 USING_NS_CC;

@@ -1,6 +1,4 @@
-# Puppeteer++ Game design document
-
-![Game title logo](img/game-title.jpg)
+![Game title logo](img/game-title.png) game design document
 
 ## Introduction
 
@@ -9,3 +7,13 @@
 
 
 ## Gameplay
+
+## Brainstorm
+
+### Base classes
+
+	class Actor : public Sprite
+	{
+	  public:
+	    
+	};
