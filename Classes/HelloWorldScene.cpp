@@ -1,16 +1,5 @@
 #include "HelloWorldScene.h"
 
-#include <CCActionInterval.h>
-#include <CCAnimation.h>
-#include <CCDirector.h>
-#include <CCGeometry.h>
-#include <CCLabelTTF.h>
-#include <CCMenu.h>
-#include <CCMenuItem.h>
-#include <CCScene.h>
-#include <CCSprite.h>
-#include <SimpleAudioEngine.h>
-
 USING_NS_CC;
 
 Scene* HelloWorld::createScene()

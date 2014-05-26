@@ -1,10 +1,3 @@
-//
-//  PlaylistPlayer.h
-//
-//  Created by Jeisson Hidalgo on 07/05/14.
-//
-//
-
 #ifndef PlaylistPlayer_h
 #define PlaylistPlayer_h
 
@@ -12,7 +5,33 @@
 #include <string>
 #include <vector>
 
-/** A simple player able to play several tracks listed into a .m3u file
+/** A simple audio player for Cocos2d-x able to play several tracks listed into a .m3u file
+	@author Jeisson Hidalgo-Cespedes <jeissonh@gmail.com>
+	@version 1.0 [2014.05]
+
+	Place all audio files you want to play in the same folder, under Resources directory. Create
+	a m3u file listing the files you want to hear in your game. Most audio players are able to
+	save playlist in m3u format, for example VLC.
+
+	@a PlaylistPlayer is a singleton instance. You should create the instance in your AppDelegate
+	object calling the @a createInstance() method. You can call @a getInstance() method anytime
+	you require the singleton instance. Call @a destroyInstance() for releasing memory resources
+	or creating a new playlist player.
+
+	@code
+		#include <PlaylistPlayer.h>
+
+		bool AppDelegate::applicationDidFinishLaunching()
+		{
+			// [...]
+			PlaylistPlayer::createInstance("MySongs/Playlist.m3u", "Fonts/MusicFont.ttf");
+			PlaylistPlayer::getInstance()->play(true, true, true);
+		}
+	@encode
+
+	A @a PlaylistPlayer is also a label. Each time a new track is played, the label is shown for
+	a short time giving details about the track. It is useful for giving credit to the authors of
+	the music.
 */
 class PlaylistPlayer
 {
@@ -27,7 +46,7 @@ class PlaylistPlayer
 		float length = 0.0f;
 		/// Name of the sound file
 		std::string filename;
-		
+
 	  public:
 		/// Constructor
 		explicit TrackInfo(const std::string& title = "", float length = 0.0f, const std::string& filename = "")
@@ -42,7 +61,7 @@ class PlaylistPlayer
 		/// Plays this sound with SimpleAudioEngine as background sound
 		void play();
 	};
-	
+
   protected: // Data members
 	/// Shared instance of the player
 	static PlaylistPlayer* sharedPlaylistPlayer;
@@ -64,13 +83,13 @@ class PlaylistPlayer
 	float labelDescriptionLength = 0.0f;
 	///
 	float crossfadeLength = 0.0f;
-	
+
   public: // Shared instance management
-    /// Get the shared Engine object, it will new one when first time be called
-    static PlaylistPlayer* getInstance();
+	/// Get the shared Engine object, it will new one when first time be called
+	static PlaylistPlayer* getInstance();
 	/// Destroy the shared instance of the player
 	static void destroyInstance();
-	
+
   public: // Playback operations
 	/// Load a m3u playlist file
 	/// @return true in success, false instead

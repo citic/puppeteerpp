@@ -1,11 +1,7 @@
 #ifndef __HELLOWORLD_SCENE_H__
 #define __HELLOWORLD_SCENE_H__
 
-#include <CCLayer.h>
-#include <CCPlatformMacros.h>
-
-class cocos2d::Ref;
-class cocos2d::Scene;
+#include <cocos2d.h>
 
 class HelloWorld : public cocos2d::Layer
 {
