@@ -1,9 +1,12 @@
 #ifndef PlaylistPlayer_h
 #define PlaylistPlayer_h
 
+#include <cocos2d.h>
 #include <fstream>
 #include <string>
 #include <vector>
+
+USING_NS_CC;
 
 /** A simple audio player for Cocos2d-x able to play several tracks listed into a .m3u file
 	@author Jeisson Hidalgo-Cespedes <jeissonh@gmail.com>
@@ -33,7 +36,7 @@
 	a short time giving details about the track. It is useful for giving credit to the authors of
 	the music.
 */
-class PlaylistPlayer
+class PlaylistPlayer : public Label
 {
   public: // Nested data types
 	/** Information of a track retrieved from a m3u list file */
@@ -64,47 +67,58 @@ class PlaylistPlayer
 
   protected: // Data members
 	/// Shared instance of the player
-	static PlaylistPlayer* sharedPlaylistPlayer;
+	static PlaylistPlayer* _sharedPlaylistPlayer;
 	/// Indicates no track is playing
-	static const long noTrack = -1;
+	static const size_t _noTrack = (size_t)-1;
 	/// Current track being played, -1 for none
-	long playingTrackIndex = noTrack;
+	long _playingTrackIndex = _noTrack;
 	/// The list of tracks loaded from a m3u file
-	std::vector<TrackInfo> tracks;
+	std::vector<TrackInfo> _tracks;
 	/// The name of the current m3u loaded file, empty if nothing is loaded
-	std::string filename;
+	std::string _m3uFilename;
 	/// True if after finishing the list, it must automatically rewind
-	bool loop = false;
+	bool _loop = false;
 	///
-	bool shuffleAfterEachLoop = false;
+	bool _shuffleAfterEachLoop = false;
 	/// Each time a new track is played, a label displaying the description of the track will be
 	/// shown for @a labelDescriptionLength seconds. Keep 0.0f to disable it. The label will emerge
 	/// from bottom of the screen
-	float labelDescriptionLength = 0.0f;
+	float _labelDescriptionLength = 0.0f;
 	///
-	float crossfadeLength = 0.0f;
+	float _crossfadeLength = 0.0f;
+
+  public: // Construction and destruction
+	/// Constructor
+	PlaylistPlayer();
+	/// Destructor
+	virtual ~PlaylistPlayer();
 
   public: // Shared instance management
+	/// Creates the singleton shared instance
+	static PlaylistPlayer* createInstance(const std::string& m3uFilename, const std::string& fontFile, float fontSize, const Size& dimensions = Size::ZERO, TextHAlignment hAlignment = TextHAlignment::LEFT, TextVAlignment vAlignment = TextVAlignment::TOP);
 	/// Get the shared Engine object, it will new one when first time be called
-	static PlaylistPlayer* getInstance();
-	/// Destroy the shared instance of the player
+	/// @return A pointer to the shared player, nullptr if no shared player has been created before
+	/// Call @a createInstance() before executing @a getInstance()
+	inline static PlaylistPlayer* getInstance() { return _sharedPlaylistPlayer; }
+	/// Destroy the shared instance of the player. It is useful for releasing memory resources or
+	/// loading a new playlist by calling @a createInstance()
 	static void destroyInstance();
 
   public: // Playback operations
 	/// Load a m3u playlist file
 	/// @return true in success, false instead
-	bool load(const std::string& filename);
+	bool load(const std::string& _m3uFilename);
 	/// Play the full playlist from the beginning, track by track
 	/// @param loop Send true if the playlist must be played indefenitely, false for playing once
 	/// @return The index of the current track being played (0), @a noTrack on error
-	long play(bool loop = false, bool shuffle = false, bool shuffleAfterEachLoop = false);
+	long play(bool _loop = false, bool shuffle = false, bool _shuffleAfterEachLoop = false);
 	/// Plays the next track on the playlist
 	/// @return the track number of the new playing track, @a noTrack if no more tracks available
 	long playNextTrack();
 	/// Plays the current track if stopped, or restart playing it if already playing
 	/// @param loop Send true if the current track must be played repeatedly
 	/// @return The index of the current track being played (0), @a noTrack on error
-	long playCurrentTrack(bool loop = false);
+	long playCurrentTrack(bool _loop = false);
 	/// Stop current playback. Do not rewind the playlist
 	void stop();
 	/// Makes the first track the next one. If playing the current track is stopped
